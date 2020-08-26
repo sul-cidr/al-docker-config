@@ -9,7 +9,7 @@ WORKDIR ${APP_DIR}
 RUN apt-get update -qq && \
 	apt-get install -y --no-install-recommends postgresql-client nodejs nodejs-legacy npm && \
 	rm -rf /var/lib/apt/lists/* && \
-	git clone -b 2020-maintenance https://github.com/sul-cidr/al.git --depth 1 . && \
+	git clone https://github.com/sul-cidr/al.git --depth 1 . && \
     bundle install --without deployment development test && \
     gem install passenger && \
     npm install --unsafe-perm
