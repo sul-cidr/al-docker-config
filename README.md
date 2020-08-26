@@ -1,6 +1,6 @@
 # al-docker-config
 
-This repo contains docker configuration and secrets needed to deploy the Authorial London project (from https://github.com/sul-cidr/al).  The public site is available at http://authorial.stanford.edu, and the deployment is on `cidr-al-prod`.
+This repo contains docker configuration and secrets needed to deploy the Authorial London project (from https://github.com/sul-cidr/al).  The public site is available at http://authorial.stanford.edu, and the deployment is on `cidr-authorial-prod`.
 
 The configuration runs containers for the Authorial London Rails app and a PostGIS server, and exposes the Rails app via a standalone Passenger server on port 3000 of the host (with the intention that this then be reverse-proxied by Apache or NGINX).
 
