@@ -6,7 +6,7 @@ The configuration runs containers for the Authorial London Rails app and a PostG
 
 I've tried to touch the orignal repo (at `sul-cidr/al`), and in particular the code, as little as possible.  Some things (like the use of the passenger gem) are implemented in the configuration files here that could perhaps be incorporated into the upstream repo.  Likewise the capistrano config there is now redundant (the gems aren't installed in this config, but even so).
 
-Configuration variables are in the `.env` file -- edit as required.  Production secrets are in this repo, so keep it private (they were previously in the `cidr-authorial` branch of the private `sul-dlss/shared_configs` repo at https://github.com/sul-dlss/shared_configs/tree/cidr-authorial).
+Configuration variables are in the `.env` file -- edit as required.  Production values are in this repo (they were previously in the `cidr-authorial` branch of the private `sul-dlss/shared_configs` repo at https://github.com/sul-dlss/shared_configs/tree/cidr-authorial).
 
 To get this up and going, make sure you have docker engine and docker-compose installed, then clone the repo, edit `.env` values as and if desired, and run `docker compose up -d`.
 
